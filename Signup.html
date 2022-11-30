@@ -4,27 +4,33 @@
     <title>Signup</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="Signup.css">
+    <script src="Signup.js"></script>
+    <noscript>Enable Javascript</noscript>
 </head>
 <body>
-
+    
 <main>
     <center>
         <div class="Container">
-            <form action="process-signup.php" method="post" id="signup" novalidate>
+            <form action="process-signup.php" method="post" id="signup">
                 <div>
-                    <input type="text" id="name" name="name" placeholder="Name:">
+                    <input type="text" id="name" name="name" placeholder="Name" oninput="ValidateName()" autofocus required maxlength="3" minlength="">
+                    <section id="Name-error" class="error"></section>
                 </div>
                 <div>
-                    <input type="email" id="email" name="email" placeholder="Email:">
+                    <input type="email" id="email" name="email" placeholder="Email" required autocomplete="">
+                    <section id="Email-error" class="error"></section>
                 </div>
                 <div>
-                    <input type="password" id="password" name="password" placeholder="Password:">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <section id="Password-error" class="error"></section>
                 </div>
                 <div>
-                    <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Confirm Password:">
+                    <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Confirm Password" required>
+                    <section id="PasswordCon-error" class="error"></section>
                 </div>
 
-                <button>Sign up</button>
+                <input type="submit" name="Sign up" value="Sign-up"/>
             </form>
         </div>
     </center>
