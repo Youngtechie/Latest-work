@@ -1,0 +1,41 @@
+*{
+box-sizing:border-box;
+
+}
+
+body{
+
+margin:200px;
+}
+.Container{
+ background-color: cadetblue;
+    padding: 20px;
+    border-radius: 7px;
+    flex-flow: row wrap;
+    align-self: center;
+    width: 500px;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto;
+}
+
+input, select{
+
+width: 350px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+button {
+width:80px;
+height:40px;
+border-radius:4px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+label{
+font-size:4vw;
+}
